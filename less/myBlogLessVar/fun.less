@@ -1,0 +1,17 @@
+.border-radius (@radius) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.transitionFun(@key,@time,@timing){
+  transition: @key @time @timing;
+  -webkit-transition:@key @time @timing;
+  -moz-transition:@key @time @timing;
+  -ms-:@key @time @timing;
+  -o-:@key @time @timing;
+}
+
+.transformFun(@key,@val){
+  transform: @key(@val);
+}
