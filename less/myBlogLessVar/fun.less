@@ -15,3 +15,13 @@
 .transformFun(@key,@val){
   transform: @key(@val);
 }
+
+.clearfix(){
+  *zoom:1;
+  &:after{
+    content:"\200B";
+    display:block;
+    height: 0;
+    clear: both;
+  }
+}

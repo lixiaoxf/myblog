@@ -5,32 +5,86 @@
                 <a class="userPhoto"><img src="images/photo.png"/></a>
             </div>
             <div class="col-md-10">
-                <section class="col-md-12 row messageContent">
-                    <h3>我的信息{{name}}</h3>
-                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">姓名:</b>李笑</p>
-                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">学历:</b>本科</p>
-                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">生日:</b>1989年</p>
-                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">星座:</b>狮子座</p>
-                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">职业:</b>前端攻城师</p>
-                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">邮箱:</b>lixiaoxf@126.com</p>
+                <section class="col-md-12 messageContent">
+                    <h3>我的信息</h3>
+                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">姓名:</b>{{me.name}}</p>
+                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">学历:</b>{{me.education}}</p>
+                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">生日:</b>{{me.birthday}}</p>
+                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">经验:</b>{{me.exp}}</p>
+                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">职业:</b>{{me.profession}}</p>
+                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">邮箱:</b>{{me.email}}</p>
                 </section>
             </div>
         </div>
-        <div class="row content">
+        <div class="row content skill_screen_xs">
             <div class="col-md-2">
-                <a class="userPhoto"><img src="images/photo1.png"/></a>
+                <!--<a class="userPhoto"><img src="images/photo1.png"/></a>-->
             </div>
             <div class="col-md-10">
-                <section class="col-md-12 row messageContent">
-                    <h3>我的信息</h3>
-                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">姓名:</b>李笑</p>
-                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">学历:</b>本科</p>
-                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">生日:</b>1989年</p>
-                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">星座:</b>狮子座</p>
-                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">职业:</b>前端攻城师</p>
-                    <p class="col-md-6 col-sm-6"><b class="col-md-6 col-sm-6">邮箱:</b>lixiaoxf@126.com</p>
+                <section class="col-md-12 messageContent skill">
+                    <h3>我的技能</h3>
+                    <div class="row">
+                        <div>
+                            <p class="col-md-3 col-sm-3 col-xs-4 skill-type">前端技能:</p>
+                            <p class="col-md-9 col-sm-9 col-xs-8 skill-detail">
+                                {{me.frontSkills}}
+                            </p>
+                        </div>
+                        <div>
+                            <p class="col-md-3 col-sm-3 col-xs-4 skill-type">后台技能:</p>
+                            <p class="col-md-9 col-sm-9 col-xs-8 skill-detail">
+                                {{me.backSkills}}
+                            </p>
+                        </div>
+                        <div>
+                            <p class="col-md-3 col-sm-3 col-xs-4 skill-type">其他技能:</p>
+                            <p class="col-md-9 col-sm-9 col-xs-8 skill-detail">
+                                {{me.otherSkills}}
+                            </p>
+                        </div>
+                        <div>
+                            <p class="col-md-3 col-sm-3 col-xs-4 skill-type">生活技能:</p>
+                            <p class="col-md-9 col-sm-9 col-xs-8 skill-detail">
+                                {{me.technicalSkill}}
+                            </p>
+                        </div>
+
+                    </div>
                 </section>
             </div>
+        </div>
+        <div class="row myproject">
+            <section>
+                <h3>我的项目</h3>
+
+                <div ng-repeat=" project in myProjects" class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="{{project.img}}" alt="...">
+                        <div class="caption">
+                            <h3>{{project.title}}</h3>
+                            <p>{{project.desc}}</p>
+                            <p><a ng-href="{{project.link}}" class="btn btn-primary" role="button">Button</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="opus row">
+            <section>
+                <h3>myOpus</h3>
+                <div class="col-sm-6 col-md-3" ng-repeat="opus in myOpuses">
+                    <div class="card">
+                        <div class="card-title">
+                            {{opus.title}}
+                        </div>
+                        <div class="card-image">
+                            <img ng-src="{{opus.img}}">
+                        </div>
+                        <div class="card-detail">{{opus.desc}}</div>
+                    </div>
+                </div>
+
+            </section>
         </div>
     </section>
 </div>

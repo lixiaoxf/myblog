@@ -1,0 +1,16 @@
+{
+  "code":0,
+  "data":{
+    "id":1,
+    "name":"李笑",
+    "birthday":"1989-6-3",
+    "profession":"前端攻城师",
+    "education":"本科",
+    "exp":"4年",
+    "email":"lixiaoxf@126.com",
+    "frontSkills":"javascript , html ,css , jquery, html5 , css3 , angularjs , bootstrap , less ,正则",
+    "backSkills":"熟悉 java , python 了解 sql , mysql , oracle",
+    "otherSkills":"linux , git",
+    "technicalSkill":"烧火 , 做饭 , 炒菜 , 唱歌 , 走路 和 吃饭. (¯^¯ )"
+  }
+}

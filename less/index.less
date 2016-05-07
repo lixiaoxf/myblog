@@ -2,13 +2,15 @@
 @import "myBlogLessVar/fun";
 body{
   background:url(@index_background_url) repeat;
-  height: 1000px;
 }
 
-a{
+a,a:visited,a:active{
   color:@a_color;
 }
 
+/*
+  导航
+*/
 .myBlogNavHead(){
   button{
     color:@a_color;
@@ -77,6 +79,9 @@ a{
   padding-top:75px;
 }
 
+/*
+  主体内容
+*/
 .myBlogContent_hover_screen_sm_min{
   @media (min-width: @screen-sm-min){
 
@@ -90,6 +95,9 @@ a{
   color:darken(@my_blog_nav_background,20%);
   .content{
     margin-bottom: 25px;
+  }
+  section{
+    .clearfix();
   }
 }
 
@@ -109,5 +117,88 @@ a{
     width: @user_photo_img_size;
     height:@user_photo_img_size;
     border-radius: @user_photo_img_size;
+  }
+}
+
+/*
+  我的技能
+*/
+.skill{
+  div{
+    .clearfix();
+  }
+  p{
+    margin-bottom:15px;
+  }
+  .skill-type{
+    font-weight: bold;
+  }
+  .skill-detail{
+    text-align: left;
+  }
+}
+
+
+.skill_screen_xs{
+  @media (max-width: @screen-sm-min){
+
+    .skill-type{
+      text-align: center;
+      width: auto;
+      padding-right: 0;
+    }
+
+    .skill-detail{
+      text-align: left;
+    }
+
+  }
+}
+/*
+  我的项目
+*/
+.myproject{
+
+}
+
+/*
+  卡片
+*/
+.card {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 30px;
+
+
+}
+.card{
+  @font-padding:10px;
+  .card-title {
+    padding:@font-padding - 5 @font-padding;
+    font-size: @root_font_size;
+    border: none;
+    text-align: left;
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width:100%;
+      border-radius: @root_font_size;
+    }
+  }
+  .card-image {
+    border: none;
+    height:240px;
+    img{
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+    }
+  }
+
+  .card-detail{
+    padding: @font-padding+2 @font-padding;
+    font-size: @root_font_size;
+    text-align: left;
   }
 }

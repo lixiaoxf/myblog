@@ -4,13 +4,13 @@ myBlog.config(["$httpProvider",function($httpProvider){
     $httpProvider.interceptors.push("httpInterceptor")
 }])
 
-//http À¹½ØÆ÷
+//httpæ‹¦æˆªå™¨
 myBlog.factory("httpInterceptor",["$q","$injector",function($q,$injector){
     var httpInterceptor = {
         "responseError":function(response){
             if(response.status == 401){
 
-            }else if(response.status == 200){
+            }else if(response.status == 404){
                 alert(404)
             }
             return $q.reject(response)
