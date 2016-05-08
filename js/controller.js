@@ -20,4 +20,7 @@ myBlog
             }
         })
     }])
+    .controller('searchController',[function(){
+
+    }])
 

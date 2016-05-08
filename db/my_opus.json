@@ -5,29 +5,33 @@
       "opusid":"1",
       "img":"images/works/xiaopage.png",
       "title":"H5+css3+响应式",
-      "desc":"github: http://git.lixiaoxf.cn/h5/css",
-      "link":""
+      "desc":"github: https://github.com/lixiaoxf/xiaoPage",
+      "pagelink":"http://lixiaoxf.github.io/xiaoPage/",
+      "gitlink":"https://github.com/lixiaoxf/xiaoPage"
     },
     {
       "opusid":"2",
       "img":"images/works/ling.png",
       "title":"css3 菱形立方体",
-      "desc":"github: http://git.lixiaoxf.cn/h5/css",
-      "link":""
+      "desc":"github: https://github.com/lixiaoxf/3DObject",
+      "pagelink":"http://lixiaoxf.github.io/3DObject/tuoluo.html",
+      "gitlink":"https://github.com/lixiaoxf/3DObject"
     },
     {
       "opusid":"3",
       "img":"images/works/lifang.png",
       "title":"css3 正方体",
-      "desc":"github: http://git.lixiaoxf.cn/h5/css",
-      "link":""
+      "desc":"github: https://github.com/lixiaoxf/3DObject",
+      "pagelink":"http://lixiaoxf.github.io/3DObject/",
+      "gitlink":"https://github.com/lixiaoxf/3DObject"
     },
     {
       "opusid":"4",
       "img":"images/works/work1.png",
       "title":"jquery插件 自定义滚动条",
-      "desc":"github: http://git.lixiaoxf.cn/h5/css",
-      "link":""
+      "desc":"github: https://github.com/lixiaoxf/xiaoScrollBar",
+      "pagelink":"http://lixiaoxf.github.io/xiaoScrollBar/",
+      "gitlink":"https://github.com/lixiaoxf/xiaoScrollBar"
     }
   ]
 }

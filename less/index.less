@@ -2,6 +2,8 @@
 @import "myBlogLessVar/fun";
 body{
   background:url(@index_background_url) repeat;
+  position: relative;
+  height: 100%;
 }
 
 a,a:visited,a:active{
@@ -104,8 +106,8 @@ a,a:visited,a:active{
 .messageContent{
   background: @a_color;
   border:@my_blog_nav_background 1px solid;
-  border-radius: 25px;
-  padding-bottom: 20px;
+  border-radius: 10px;
+  padding-bottom: 10px;
 }
 
 .userPhoto{
@@ -154,17 +156,47 @@ a,a:visited,a:active{
 
   }
 }
+
+.specilTitle {
+  text-align: center;
+  width: 200px;
+  padding:10px 30px;
+  background: #fff;
+  display:inline-block;
+  color:#21801c;
+  .messageContent();
+
+}
 /*
   我的项目
 */
 .myproject{
-
+  .messageContent();
+  margin-bottom: 35px;
+  background: url("../images/myprojectbg.png");
+  .card{
+    .card-image{
+      height:150px;
+      line-height: 150px;
+    }
+  }
 }
+
+/*
+  我的作品
+*/
+.opus{
+  .messageContent();
+
+  background:  url("../images/myprojectbg.png");
+}
+
 
 /*
   卡片
 */
 .card {
+  border-radius: 5px;
   width: 100%;
   background: #fff;
   margin-bottom: 30px;
@@ -202,5 +234,24 @@ a,a:visited,a:active{
     padding: @font-padding+2 @font-padding;
     font-size: @root_font_size;
     text-align: left;
+
+    a{
+      color: @my_blog_nav_background;
+    }
+  }
+}
+
+.searchWrap{
+  background: #fff;
+  height: 100%;
+  min-height:600px;
+  padding-top:1px;
+  .searchContent{
+    padding: 35px;
+    margin-top:40px;
+    h2{
+
+      text-align: center;
+    }
   }
 }
