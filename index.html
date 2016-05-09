@@ -11,6 +11,7 @@
     <script type="text/javascript" src="plugIn/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="lib/angularjs.1.4.6.min.js"></script>
     <script type="text/javascript" src="lib/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
     <script type="text/javascript" src="js/myBlogApp.js"></script>
     <script type="text/javascript" src="js/factory.js"></script>
     <script type="text/javascript" src="js/service.js"></script>
@@ -20,7 +21,7 @@
 </head>
 <body>
     <div class="myBlogNavWrap navbar-fixed-top myBlogNavWrap_hover_screen_sm_min">
-        <nav class="navbar">
+        <nav class="navbar" ng-controller="mainController">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myBlogNav" aria-expanded="false">
@@ -30,10 +31,11 @@
                 </div>
                 <div id="myBlogNav" class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav myBlogNav">
+                        <li ng-repeat="nav in navlist"><a ng-href="{{'#'+nav.tid}}" class="{{navselect==nav.tid?'navCur':''}}">{{nav.name}}</a></li>
                        <!-- <li><a href="#index">home</a></li>
                         <li><a>blog</a></li>-->
-                        <li><a href="#profile">profile</a></li>
-                        <li><a>github</a></li>
+                        <!--<li><a class="navCur" href="#profile">profile</a></li>-->
+                        <!--<li><a href="#github">github</a></li>-->
                     </ul>
                     <!--
                     <ul class="nav navbar-nav myBlogNav">

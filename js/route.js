@@ -1,5 +1,5 @@
 myBlog.config(["$routeProvider",function($routeProvider){
-    $routeProvider.when('/index',{
+    $routeProvider.when('/github',{
             "templateUrl":"view/index.html",
             "controller":"indexController"
         })
@@ -8,6 +8,6 @@ myBlog.config(["$routeProvider",function($routeProvider){
             "controller":"profileController"
         })
         .otherwise({
-            redirectTo: '/search'
+            redirectTo: '/profile'
         });
 }])

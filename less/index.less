@@ -6,7 +6,8 @@ body{
   height: 100%;
 }
 
-a,a:visited,a:active{
+a,a:visited,a:active,a:link{
+  text-decoration:none;
   color:@a_color;
 }
 
@@ -29,9 +30,12 @@ a,a:visited,a:active{
       .border-radius(15px);
       .transitionFun(all,.3s,ease-out);
     }
-    li a:hover {
+    .navCur {
+      background: @navCur_background;
       color:@my_blog_nav_background;
-
+    }
+    li a:hover {
+      .navCur();
     }
     .navbar-brand:hover{
       color:@a_color;
@@ -163,7 +167,7 @@ a,a:visited,a:active{
   padding:10px 30px;
   background: #fff;
   display:inline-block;
-  color:#21801c;
+  color:@my_blog_font_color;
   .messageContent();
 
 }
@@ -171,9 +175,12 @@ a,a:visited,a:active{
   我的项目
 */
 .myproject{
-  .messageContent();
+
   margin-bottom: 35px;
-  background: url("../images/myprojectbg.png");
+  section {
+    .messageContent();
+    background: url("../images/myprojectbg.png");
+  }
   .card{
     .card-image{
       height:150px;
@@ -186,9 +193,7 @@ a,a:visited,a:active{
   我的作品
 */
 .opus{
-  .messageContent();
-
-  background:  url("../images/myprojectbg.png");
+  .myproject();
 }
 
 
@@ -241,17 +246,11 @@ a,a:visited,a:active{
   }
 }
 
-.searchWrap{
-  background: #fff;
-  height: 100%;
-  min-height:600px;
-  padding-top:1px;
-  .searchContent{
-    padding: 35px;
-    margin-top:40px;
-    h2{
 
-      text-align: center;
-    }
+
+.github{
+  margin-top: 100px;
+  a{
+    color:@my_blog_font_color;
   }
 }

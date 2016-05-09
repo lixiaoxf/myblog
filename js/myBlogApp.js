@@ -2,10 +2,7 @@ var myBlog = angular.module("myBlog",["ngRoute"]);
 
 myBlog.config(["$httpProvider",function($httpProvider){
     $httpProvider.interceptors.push("httpInterceptor")
-}])
-
-//http拦截器
-myBlog.factory("httpInterceptor",["$q","$injector",function($q,$injector){
+}]).factory("httpInterceptor",["$q","$injector",function($q,$injector){
     var httpInterceptor = {
         "responseError":function(response){
             if(response.status == 401){
@@ -26,4 +23,10 @@ myBlog.factory("httpInterceptor",["$q","$injector",function($q,$injector){
         }
     }
     return httpInterceptor;
+}]).run(["$rootScope","navSelect",function($rootScope,navSelect){
+    $rootScope.$on("$routeChangeSuccess",function(ev,next,current){
+        navSelect.setSelect(next.$$route.originalPath);
+        $rootScope.navselect = navSelect.getSelect();
+    })
+
 }])
