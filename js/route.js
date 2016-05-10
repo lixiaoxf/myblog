@@ -1,7 +1,7 @@
 myBlog.config(["$routeProvider",function($routeProvider){
     $routeProvider.when('/github',{
-            "templateUrl":"view/index.html",
-            "controller":"indexController"
+            "templateUrl":"view/github.html",
+            "controller":"githubController"
         })
         .when('/profile',{
             "templateUrl":"view/profile.html",

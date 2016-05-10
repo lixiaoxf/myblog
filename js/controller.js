@@ -4,8 +4,7 @@ myBlog
         $scope.navlist = BlogConfig["nav"]
         $scope.select = navSelect.getSelect();
     }])
-    .controller('indexController',["$scope","$window","$interval",function($scope,$window,$interval){
-        //$window.location.href = "https://github.com/lixiaoxf"
+    .controller('githubController',["$scope","$window","$interval",function($scope,$window,$interval){
         $scope.time = 5;
         $scope.cue = $scope.time+"秒后进入我的github";
         var timer = $interval(function(){

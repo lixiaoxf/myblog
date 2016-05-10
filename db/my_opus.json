@@ -2,6 +2,14 @@
   "code":0,
   "data":[
     {
+      "opusid":"5",
+      "img":"images/works/blog.png",
+      "title":"angularjs bootstrap less",
+      "desc":"github: https://github.com/lixiaoxf/myblog/",
+      "pagelink":"https://github.com/lixiaoxf/myblog/",
+      "gitlink":"https://github.com/lixiaoxf/myblog/"
+    },
+    {
       "opusid":"1",
       "img":"images/works/xiaopage.png",
       "title":"H5+css3+响应式",
