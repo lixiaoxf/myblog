@@ -5,7 +5,7 @@
       "opusid":"5",
       "img":"images/works/blog.png",
       "title":"angularjs bootstrap less",
-      "desc":"github: https://github.com/lixiaoxf/myblog/",
+      "desc":"github: github.com/lixiaoxf/myblog/",
       "pagelink":"https://github.com/lixiaoxf/myblog/",
       "gitlink":"https://github.com/lixiaoxf/myblog/"
     },
@@ -13,7 +13,7 @@
       "opusid":"1",
       "img":"images/works/xiaopage.png",
       "title":"H5+css3+响应式",
-      "desc":"github: https://github.com/lixiaoxf/xiaoPage",
+      "desc":"github: github.com/lixiaoxf/xiaoPage",
       "pagelink":"http://lixiaoxf.github.io/xiaoPage/",
       "gitlink":"https://github.com/lixiaoxf/xiaoPage"
     },
@@ -21,7 +21,7 @@
       "opusid":"2",
       "img":"images/works/ling.png",
       "title":"css3 菱形立方体",
-      "desc":"github: https://github.com/lixiaoxf/3DObject",
+      "desc":"github: github.com/lixiaoxf/3DObject",
       "pagelink":"http://lixiaoxf.github.io/3DObject/tuoluo.html",
       "gitlink":"https://github.com/lixiaoxf/3DObject"
     },
@@ -29,7 +29,7 @@
       "opusid":"3",
       "img":"images/works/lifang.png",
       "title":"css3 正方体",
-      "desc":"github: https://github.com/lixiaoxf/3DObject",
+      "desc":"github: github.com/lixiaoxf/3DObject",
       "pagelink":"http://lixiaoxf.github.io/3DObject/",
       "gitlink":"https://github.com/lixiaoxf/3DObject"
     },
@@ -37,9 +37,17 @@
       "opusid":"4",
       "img":"images/works/work1.png",
       "title":"jquery插件 自定义滚动条",
-      "desc":"github: https://github.com/lixiaoxf/xiaoScrollBar",
+      "desc":"github: github.com/lixiaoxf/xiaoScrollBar",
       "pagelink":"http://lixiaoxf.github.io/xiaoScrollBar/",
       "gitlink":"https://github.com/lixiaoxf/xiaoScrollBar"
+    },
+    {
+      "opusid":"6",
+      "img":"images/works/popover.png",
+      "title":"angularjs directive 模拟popover",
+      "desc":"github: github.com/lixiaoxf/directiveBootstrap",
+      "pagelink":"http://lixiaoxf.github.io/directiveBootstrap",
+      "gitlink":"https://github.com/lixiaoxf/directiveBootstrap"
     }
   ]
 }
